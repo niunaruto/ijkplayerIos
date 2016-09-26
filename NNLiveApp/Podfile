@@ -1,0 +1,32 @@
+# Uncomment this line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'NNLiveApp' do
+  # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for NNLiveApp
+  pod 'AFNetworking', '~> 3.0'
+  pod 'Masonry'
+  pod 'JSONModel'
+  pod 'SDWebImage'
+
+  target 'NNLiveAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'AFNetworking', '~> 3.0'
+    pod 'Masonry'
+    pod 'JSONModel'
+    pod 'SDWebImage'
+  end
+
+  target 'NNLiveAppUITests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'AFNetworking', '~> 3.0'
+    pod 'Masonry'
+    pod 'JSONModel'
+    pod 'SDWebImage'
+  end
+
+end

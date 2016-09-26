@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16BF0DD61D99208200F586C0 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BF0DD51D99208200F586C0 /* IJKMediaFramework.framework */; };
+		16BF0DED1D99229600F586C0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BF0DEC1D99229600F586C0 /* libz.tbd */; };
+		16BF0DEE1D9922A400F586C0 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BF0DE21D9920F600F586C0 /* libbz2.tbd */; };
+		16BF0DEF1D9922B100F586C0 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BF0DE01D9920E700F586C0 /* CoreVideo.framework */; };
+		16BF0DF01D9922BF00F586C0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BF0DDE1D9920D800F586C0 /* CoreMedia.framework */; };
+		16BF0DF11D9922D000F586C0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BF0DDA1D9920AE00F586C0 /* AVFoundation.framework */; };
+		16BF0DF21D9922DC00F586C0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BF0DD81D9920A300F586C0 /* AudioToolbox.framework */; };
+		16BF0DF31D9922E900F586C0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BF0DE41D99210400F586C0 /* MediaPlayer.framework */; };
+		16BF0DF41D9922F400F586C0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BF0DE61D99211600F586C0 /* MobileCoreServices.framework */; };
+		16BF0DF51D99230200F586C0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BF0DE81D99211F00F586C0 /* OpenGLES.framework */; };
+		16BF0DF61D99230D00F586C0 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BF0DEA1D99213300F586C0 /* VideoToolbox.framework */; };
+		16BF0DFC1D99262B00F586C0 /* NNLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BF0DFB1D99262B00F586C0 /* NNLiveModel.m */; };
+		16BF0E001D99282A00F586C0 /* YZLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BF0DFE1D99282A00F586C0 /* YZLiveCell.m */; };
+		16BF0E041D99292200F586C0 /* NNLiveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BF0E031D99292200F586C0 /* NNLiveTableViewController.m */; };
+		16C175DB1D991E7200B74A8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C175DA1D991E7200B74A8E /* main.m */; };
+		16C175DE1D991E7300B74A8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C175DD1D991E7300B74A8E /* AppDelegate.m */; };
+		16C175E41D991E7300B74A8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C175E21D991E7300B74A8E /* Main.storyboard */; };
+		16C175E61D991E7400B74A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C175E51D991E7400B74A8E /* Assets.xcassets */; };
+		16C175E91D991E7400B74A8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C175E71D991E7400B74A8E /* LaunchScreen.storyboard */; };
+		16C175F41D991E7500B74A8E /* NNLiveAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C175F31D991E7500B74A8E /* NNLiveAppTests.m */; };
+		16C175FF1D991E7600B74A8E /* NNLiveAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C175FE1D991E7600B74A8E /* NNLiveAppUITests.m */; };
+		66F77FFD3E56AD640940BEE4 /* libPods-NNLiveAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8F1B3CCD34B6CAC519EBC5 /* libPods-NNLiveAppTests.a */; };
+		D1CBD20914218CB6AC7BB4FA /* libPods-NNLiveAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07731FBFA0E5981701E149AB /* libPods-NNLiveAppUITests.a */; };
+		D85FBF74908D11F914AD122C /* libPods-NNLiveApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F48B1FAE405359E9FB4CE4D /* libPods-NNLiveApp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16C175F01D991E7500B74A8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16C175CE1D991E7100B74A8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16C175D51D991E7100B74A8E;
+			remoteInfo = NNLiveApp;
+		};
+		16C175FB1D991E7600B74A8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16C175CE1D991E7100B74A8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16C175D51D991E7100B74A8E;
+			remoteInfo = NNLiveApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07731FBFA0E5981701E149AB /* libPods-NNLiveAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNLiveAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DB956E29EE4BF6B65F5CBDA /* Pods-NNLiveApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNLiveApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NNLiveApp/Pods-NNLiveApp.debug.xcconfig"; sourceTree = "<group>"; };
+		16BF0DD51D99208200F586C0 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		16BF0DD81D9920A300F586C0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		16BF0DDA1D9920AE00F586C0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		16BF0DDC1D9920C200F586C0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		16BF0DDE1D9920D800F586C0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		16BF0DE01D9920E700F586C0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		16BF0DE21D9920F600F586C0 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		16BF0DE41D99210400F586C0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		16BF0DE61D99211600F586C0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		16BF0DE81D99211F00F586C0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		16BF0DEA1D99213300F586C0 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		16BF0DEC1D99229600F586C0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		16BF0DFA1D99262B00F586C0 /* NNLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLiveModel.h; sourceTree = "<group>"; };
+		16BF0DFB1D99262B00F586C0 /* NNLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLiveModel.m; sourceTree = "<group>"; };
+		16BF0DFD1D99282A00F586C0 /* YZLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZLiveCell.h; sourceTree = "<group>"; };
+		16BF0DFE1D99282A00F586C0 /* YZLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZLiveCell.m; sourceTree = "<group>"; };
+		16BF0E021D99292200F586C0 /* NNLiveTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLiveTableViewController.h; sourceTree = "<group>"; };
+		16BF0E031D99292200F586C0 /* NNLiveTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLiveTableViewController.m; sourceTree = "<group>"; };
+		16C175D61D991E7100B74A8E /* NNLiveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNLiveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C175DA1D991E7200B74A8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		16C175DC1D991E7200B74A8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		16C175DD1D991E7300B74A8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		16C175E31D991E7300B74A8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16C175E51D991E7400B74A8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16C175E81D991E7400B74A8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16C175EA1D991E7500B74A8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C175EF1D991E7500B74A8E /* NNLiveAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNLiveAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C175F31D991E7500B74A8E /* NNLiveAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNLiveAppTests.m; sourceTree = "<group>"; };
+		16C175F51D991E7500B74A8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C175FA1D991E7600B74A8E /* NNLiveAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNLiveAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C175FE1D991E7600B74A8E /* NNLiveAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNLiveAppUITests.m; sourceTree = "<group>"; };
+		16C176001D991E7600B74A8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C8F1B3CCD34B6CAC519EBC5 /* libPods-NNLiveAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNLiveAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F48B1FAE405359E9FB4CE4D /* libPods-NNLiveApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNLiveApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B3596D5A281E626020D9F5C /* Pods-NNLiveAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNLiveAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NNLiveAppUITests/Pods-NNLiveAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A39C8DA9705ABB18E81D460E /* Pods-NNLiveAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNLiveAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NNLiveAppTests/Pods-NNLiveAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		D811AF2D5EBC6FE620413708 /* Pods-NNLiveApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNLiveApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NNLiveApp/Pods-NNLiveApp.release.xcconfig"; sourceTree = "<group>"; };
+		EF4EE780B216C320EE4E468B /* Pods-NNLiveAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNLiveAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NNLiveAppUITests/Pods-NNLiveAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9973510FF2C41ED77E45689 /* Pods-NNLiveAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNLiveAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NNLiveAppTests/Pods-NNLiveAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16C175D31D991E7100B74A8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16BF0DF61D99230D00F586C0 /* VideoToolbox.framework in Frameworks */,
+				16BF0DF51D99230200F586C0 /* OpenGLES.framework in Frameworks */,
+				16BF0DF41D9922F400F586C0 /* MobileCoreServices.framework in Frameworks */,
+				16BF0DF31D9922E900F586C0 /* MediaPlayer.framework in Frameworks */,
+				16BF0DF21D9922DC00F586C0 /* AudioToolbox.framework in Frameworks */,
+				16BF0DF11D9922D000F586C0 /* AVFoundation.framework in Frameworks */,
+				16BF0DF01D9922BF00F586C0 /* CoreMedia.framework in Frameworks */,
+				16BF0DEF1D9922B100F586C0 /* CoreVideo.framework in Frameworks */,
+				16BF0DEE1D9922A400F586C0 /* libbz2.tbd in Frameworks */,
+				16BF0DED1D99229600F586C0 /* libz.tbd in Frameworks */,
+				16BF0DD61D99208200F586C0 /* IJKMediaFramework.framework in Frameworks */,
+				D85FBF74908D11F914AD122C /* libPods-NNLiveApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C175EC1D991E7500B74A8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F77FFD3E56AD640940BEE4 /* libPods-NNLiveAppTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C175F71D991E7600B74A8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1CBD20914218CB6AC7BB4FA /* libPods-NNLiveAppUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07113AF073B3925FBE71E471 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DB956E29EE4BF6B65F5CBDA /* Pods-NNLiveApp.debug.xcconfig */,
+				D811AF2D5EBC6FE620413708 /* Pods-NNLiveApp.release.xcconfig */,
+				F9973510FF2C41ED77E45689 /* Pods-NNLiveAppTests.debug.xcconfig */,
+				A39C8DA9705ABB18E81D460E /* Pods-NNLiveAppTests.release.xcconfig */,
+				EF4EE780B216C320EE4E468B /* Pods-NNLiveAppUITests.debug.xcconfig */,
+				6B3596D5A281E626020D9F5C /* Pods-NNLiveAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		16BF0DD71D9920A200F586C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16BF0DEC1D99229600F586C0 /* libz.tbd */,
+				16BF0DEA1D99213300F586C0 /* VideoToolbox.framework */,
+				16BF0DE81D99211F00F586C0 /* OpenGLES.framework */,
+				16BF0DE61D99211600F586C0 /* MobileCoreServices.framework */,
+				16BF0DE41D99210400F586C0 /* MediaPlayer.framework */,
+				16BF0DE21D9920F600F586C0 /* libbz2.tbd */,
+				16BF0DE01D9920E700F586C0 /* CoreVideo.framework */,
+				16BF0DDE1D9920D800F586C0 /* CoreMedia.framework */,
+				16BF0DDC1D9920C200F586C0 /* CoreGraphics.framework */,
+				16BF0DDA1D9920AE00F586C0 /* AVFoundation.framework */,
+				16BF0DD81D9920A300F586C0 /* AudioToolbox.framework */,
+				4F48B1FAE405359E9FB4CE4D /* libPods-NNLiveApp.a */,
+				3C8F1B3CCD34B6CAC519EBC5 /* libPods-NNLiveAppTests.a */,
+				07731FBFA0E5981701E149AB /* libPods-NNLiveAppUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16C175CD1D991E7100B74A8E = {
+			isa = PBXGroup;
+			children = (
+				16C175D81D991E7200B74A8E /* NNLiveApp */,
+				16C175F21D991E7500B74A8E /* NNLiveAppTests */,
+				16C175FD1D991E7600B74A8E /* NNLiveAppUITests */,
+				16C175D71D991E7200B74A8E /* Products */,
+				16BF0DD71D9920A200F586C0 /* Frameworks */,
+				07113AF073B3925FBE71E471 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		16C175D71D991E7200B74A8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16C175D61D991E7100B74A8E /* NNLiveApp.app */,
+				16C175EF1D991E7500B74A8E /* NNLiveAppTests.xctest */,
+				16C175FA1D991E7600B74A8E /* NNLiveAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16C175D81D991E7200B74A8E /* NNLiveApp */ = {
+			isa = PBXGroup;
+			children = (
+				16C175DC1D991E7200B74A8E /* AppDelegate.h */,
+				16C175DD1D991E7300B74A8E /* AppDelegate.m */,
+				16BF0E021D99292200F586C0 /* NNLiveTableViewController.h */,
+				16BF0E031D99292200F586C0 /* NNLiveTableViewController.m */,
+				16BF0DFA1D99262B00F586C0 /* NNLiveModel.h */,
+				16BF0DFB1D99262B00F586C0 /* NNLiveModel.m */,
+				16BF0DFD1D99282A00F586C0 /* YZLiveCell.h */,
+				16BF0DFE1D99282A00F586C0 /* YZLiveCell.m */,
+				16C175E21D991E7300B74A8E /* Main.storyboard */,
+				16C175E51D991E7400B74A8E /* Assets.xcassets */,
+				16C175E71D991E7400B74A8E /* LaunchScreen.storyboard */,
+				16C175EA1D991E7500B74A8E /* Info.plist */,
+				16C175D91D991E7200B74A8E /* Supporting Files */,
+			);
+			path = NNLiveApp;
+			sourceTree = "<group>";
+		};
+		16C175D91D991E7200B74A8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16BF0DD51D99208200F586C0 /* IJKMediaFramework.framework */,
+				16C175DA1D991E7200B74A8E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16C175F21D991E7500B74A8E /* NNLiveAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				16C175F31D991E7500B74A8E /* NNLiveAppTests.m */,
+				16C175F51D991E7500B74A8E /* Info.plist */,
+			);
+			path = NNLiveAppTests;
+			sourceTree = "<group>";
+		};
+		16C175FD1D991E7600B74A8E /* NNLiveAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16C175FE1D991E7600B74A8E /* NNLiveAppUITests.m */,
+				16C176001D991E7600B74A8E /* Info.plist */,
+			);
+			path = NNLiveAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16C175D51D991E7100B74A8E /* NNLiveApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C176031D991E7600B74A8E /* Build configuration list for PBXNativeTarget "NNLiveApp" */;
+			buildPhases = (
+				7C98F63503A910EB48A3B8E9 /* [CP] Check Pods Manifest.lock */,
+				16C175D21D991E7100B74A8E /* Sources */,
+				16C175D31D991E7100B74A8E /* Frameworks */,
+				16C175D41D991E7100B74A8E /* Resources */,
+				88B70DDE0659157F2D413325 /* [CP] Embed Pods Frameworks */,
+				CDB275CCAE631B462BBA73E2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NNLiveApp;
+			productName = NNLiveApp;
+			productReference = 16C175D61D991E7100B74A8E /* NNLiveApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16C175EE1D991E7500B74A8E /* NNLiveAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C176061D991E7600B74A8E /* Build configuration list for PBXNativeTarget "NNLiveAppTests" */;
+			buildPhases = (
+				3134457CD8C3D56E88306752 /* [CP] Check Pods Manifest.lock */,
+				16C175EB1D991E7500B74A8E /* Sources */,
+				16C175EC1D991E7500B74A8E /* Frameworks */,
+				16C175ED1D991E7500B74A8E /* Resources */,
+				B10C45BDE933D4EEFE015CE6 /* [CP] Embed Pods Frameworks */,
+				A340381E67EC8E01538BD7B5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16C175F11D991E7500B74A8E /* PBXTargetDependency */,
+			);
+			name = NNLiveAppTests;
+			productName = NNLiveAppTests;
+			productReference = 16C175EF1D991E7500B74A8E /* NNLiveAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		16C175F91D991E7600B74A8E /* NNLiveAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C176091D991E7600B74A8E /* Build configuration list for PBXNativeTarget "NNLiveAppUITests" */;
+			buildPhases = (
+				DC4356820F97574B758062EF /* [CP] Check Pods Manifest.lock */,
+				16C175F61D991E7600B74A8E /* Sources */,
+				16C175F71D991E7600B74A8E /* Frameworks */,
+				16C175F81D991E7600B74A8E /* Resources */,
+				EF087AF8E3A964DEB365339A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16C175FC1D991E7600B74A8E /* PBXTargetDependency */,
+			);
+			name = NNLiveAppUITests;
+			productName = NNLiveAppUITests;
+			productReference = 16C175FA1D991E7600B74A8E /* NNLiveAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16C175CE1D991E7100B74A8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = NT;
+				TargetAttributes = {
+					16C175D51D991E7100B74A8E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = EYJX338JDS;
+						ProvisioningStyle = Automatic;
+					};
+					16C175EE1D991E7500B74A8E = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 16C175D51D991E7100B74A8E;
+					};
+					16C175F91D991E7600B74A8E = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 16C175D51D991E7100B74A8E;
+					};
+				};
+			};
+			buildConfigurationList = 16C175D11D991E7100B74A8E /* Build configuration list for PBXProject "NNLiveApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16C175CD1D991E7100B74A8E;
+			productRefGroup = 16C175D71D991E7200B74A8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16C175D51D991E7100B74A8E /* NNLiveApp */,
+				16C175EE1D991E7500B74A8E /* NNLiveAppTests */,
+				16C175F91D991E7600B74A8E /* NNLiveAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16C175D41D991E7100B74A8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C175E91D991E7400B74A8E /* LaunchScreen.storyboard in Resources */,
+				16C175E61D991E7400B74A8E /* Assets.xcassets in Resources */,
+				16C175E41D991E7300B74A8E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C175ED1D991E7500B74A8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C175F81D991E7600B74A8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3134457CD8C3D56E88306752 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7C98F63503A910EB48A3B8E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		88B70DDE0659157F2D413325 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NNLiveApp/Pods-NNLiveApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A340381E67EC8E01538BD7B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NNLiveAppTests/Pods-NNLiveAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B10C45BDE933D4EEFE015CE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NNLiveAppTests/Pods-NNLiveAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDB275CCAE631B462BBA73E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NNLiveApp/Pods-NNLiveApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC4356820F97574B758062EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF087AF8E3A964DEB365339A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NNLiveAppUITests/Pods-NNLiveAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16C175D21D991E7100B74A8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16BF0DFC1D99262B00F586C0 /* NNLiveModel.m in Sources */,
+				16C175DE1D991E7300B74A8E /* AppDelegate.m in Sources */,
+				16BF0E041D99292200F586C0 /* NNLiveTableViewController.m in Sources */,
+				16C175DB1D991E7200B74A8E /* main.m in Sources */,
+				16BF0E001D99282A00F586C0 /* YZLiveCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C175EB1D991E7500B74A8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C175F41D991E7500B74A8E /* NNLiveAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C175F61D991E7600B74A8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C175FF1D991E7600B74A8E /* NNLiveAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16C175F11D991E7500B74A8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16C175D51D991E7100B74A8E /* NNLiveApp */;
+			targetProxy = 16C175F01D991E7500B74A8E /* PBXContainerItemProxy */;
+		};
+		16C175FC1D991E7600B74A8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16C175D51D991E7100B74A8E /* NNLiveApp */;
+			targetProxy = 16C175FB1D991E7600B74A8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16C175E21D991E7300B74A8E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16C175E31D991E7300B74A8E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16C175E71D991E7400B74A8E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16C175E81D991E7400B74A8E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16C176011D991E7600B74A8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		16C176021D991E7600B74A8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16C176041D991E7600B74A8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DB956E29EE4BF6B65F5CBDA /* Pods-NNLiveApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EYJX338JDS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NNLiveApp",
+				);
+				INFOPLIST_FILE = NNLiveApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NT.NNLiveApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		16C176051D991E7600B74A8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D811AF2D5EBC6FE620413708 /* Pods-NNLiveApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EYJX338JDS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NNLiveApp",
+				);
+				INFOPLIST_FILE = NNLiveApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NT.NNLiveApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		16C176071D991E7600B74A8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9973510FF2C41ED77E45689 /* Pods-NNLiveAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NNLiveAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NT.NNLiveAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NNLiveApp.app/NNLiveApp";
+			};
+			name = Debug;
+		};
+		16C176081D991E7600B74A8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A39C8DA9705ABB18E81D460E /* Pods-NNLiveAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NNLiveAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NT.NNLiveAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NNLiveApp.app/NNLiveApp";
+			};
+			name = Release;
+		};
+		16C1760A1D991E7600B74A8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF4EE780B216C320EE4E468B /* Pods-NNLiveAppUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = NNLiveAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NT.NNLiveAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NNLiveApp;
+			};
+			name = Debug;
+		};
+		16C1760B1D991E7600B74A8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B3596D5A281E626020D9F5C /* Pods-NNLiveAppUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = NNLiveAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NT.NNLiveAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NNLiveApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16C175D11D991E7100B74A8E /* Build configuration list for PBXProject "NNLiveApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C176011D991E7600B74A8E /* Debug */,
+				16C176021D991E7600B74A8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C176031D991E7600B74A8E /* Build configuration list for PBXNativeTarget "NNLiveApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C176041D991E7600B74A8E /* Debug */,
+				16C176051D991E7600B74A8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C176061D991E7600B74A8E /* Build configuration list for PBXNativeTarget "NNLiveAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C176071D991E7600B74A8E /* Debug */,
+				16C176081D991E7600B74A8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C176091D991E7600B74A8E /* Build configuration list for PBXNativeTarget "NNLiveAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C1760A1D991E7600B74A8E /* Debug */,
+				16C1760B1D991E7600B74A8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16C175CE1D991E7100B74A8E /* Project object */;
+}
