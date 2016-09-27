@@ -7,8 +7,8 @@
 //
 
 #import "YZLiveCell.h"
-#import "NNLiveModel.h"
-//#import "YZCreatorItem.h"
+#import "YZLiveItem.h"
+#import "YZCreatorItem.h"
 #import <UIImageView+WebCache.h>
 #define Color(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 
@@ -23,7 +23,7 @@
 
 @implementation YZLiveCell
 
-- (void)setLive:(NNLiveModel *)live
+- (void)setLive:(YZLiveItem *)live
 {
     _live = live;
 

@@ -22,6 +22,7 @@
 @property (nonatomic, copy) NSString<Optional> *link;
 @property (nonatomic, copy) NSString<Optional> *multi;
 @property (nonatomic, copy) NSString<Optional> *online_users;
+@property (nonatomic, copy) NSString<Optional> *stream_addr;
 @property (nonatomic, strong) NNLiveCreatorModel <Optional>      *creator;
 @end
 

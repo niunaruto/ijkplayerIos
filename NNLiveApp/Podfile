@@ -10,6 +10,7 @@ target 'NNLiveApp' do
   pod 'Masonry'
   pod 'JSONModel'
   pod 'SDWebImage'
+  pod 'MJExtension'
 
   target 'NNLiveAppTests' do
     inherit! :search_paths
@@ -18,6 +19,7 @@ target 'NNLiveApp' do
     pod 'Masonry'
     pod 'JSONModel'
     pod 'SDWebImage'
+    pod 'MJExtension'
   end
 
   target 'NNLiveAppUITests' do
@@ -27,6 +29,7 @@ target 'NNLiveApp' do
     pod 'Masonry'
     pod 'JSONModel'
     pod 'SDWebImage'
+    pod 'MJExtension'
   end
 
 end

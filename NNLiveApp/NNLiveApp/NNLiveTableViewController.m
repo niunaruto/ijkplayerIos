@@ -7,9 +7,10 @@
 //
 
 #import "NNLiveTableViewController.h"
-#import "YZLiveCell.h"
+#import "NNLiveTableViewCell.h"
 #import <AFHTTPSessionManager.h>
 #import "NNLiveModel.h"
+#import "NNLivePlayViewController.h"
 @interface NNLiveTableViewController ()
 @property (nonatomic, strong) NSMutableArray      *dataArray;
 @end
@@ -20,6 +21,8 @@
     [super viewDidLoad];
     
     [self loadData];
+    [self.tableView registerClass:[NNLiveTableViewCell class] forCellReuseIdentifier:@"NNLiveTableViewCell"];
+    self.tableView.estimatedRowHeight = 200;
 }
 - (NSMutableArray *)dataArray{
     if (!_dataArray) {
@@ -61,17 +64,24 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    YZLiveCell *cell = [tableView dequeueReusableCellWithIdentifier:@"YZLiveCell" forIndexPath:indexPath];
+    NNLiveTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NNLiveTableViewCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.live = self.dataArray[indexPath.row];
+    cell.liveModel = self.dataArray[indexPath.row];
     
     return cell;
 }
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 500;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NNLivePlayViewController *play = [NNLivePlayViewController new];
+    play.liveModel = self.dataArray[indexPath.row];
+    [self.navigationController pushViewController:play animated:YES];
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 260;
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class NNLiveModel;
+@class YZLiveItem;
 @interface YZLiveCell : UITableViewCell
-@property (nonatomic, strong) NNLiveModel *live;
+@property (nonatomic, strong) YZLiveItem *live;
 @end

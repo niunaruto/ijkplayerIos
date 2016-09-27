@@ -19,7 +19,6 @@
 		16BF0DF51D99230200F586C0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BF0DE81D99211F00F586C0 /* OpenGLES.framework */; };
 		16BF0DF61D99230D00F586C0 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BF0DEA1D99213300F586C0 /* VideoToolbox.framework */; };
 		16BF0DFC1D99262B00F586C0 /* NNLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BF0DFB1D99262B00F586C0 /* NNLiveModel.m */; };
-		16BF0E001D99282A00F586C0 /* YZLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BF0DFE1D99282A00F586C0 /* YZLiveCell.m */; };
 		16BF0E041D99292200F586C0 /* NNLiveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BF0E031D99292200F586C0 /* NNLiveTableViewController.m */; };
 		16C175DB1D991E7200B74A8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C175DA1D991E7200B74A8E /* main.m */; };
 		16C175DE1D991E7300B74A8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C175DD1D991E7300B74A8E /* AppDelegate.m */; };
@@ -28,6 +27,19 @@
 		16C175E91D991E7400B74A8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C175E71D991E7400B74A8E /* LaunchScreen.storyboard */; };
 		16C175F41D991E7500B74A8E /* NNLiveAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C175F31D991E7500B74A8E /* NNLiveAppTests.m */; };
 		16C175FF1D991E7600B74A8E /* NNLiveAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C175FE1D991E7600B74A8E /* NNLiveAppUITests.m */; };
+		16C288621D9A0E6C0043EB34 /* NNLiveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C288601D9A0E6C0043EB34 /* NNLiveTableViewCell.m */; };
+		16C288661D9A1DCA0043EB34 /* NNLivePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C288651D9A1DCA0043EB34 /* NNLivePlayViewController.m */; };
+		16C288841D9A20B20043EB34 /* YZBroadcastListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C2886B1D9A20B20043EB34 /* YZBroadcastListController.m */; };
+		16C288851D9A20B20043EB34 /* YZCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C2886F1D9A20B20043EB34 /* YZCaptureViewController.m */; };
+		16C288861D9A20B20043EB34 /* YZCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C288701D9A20B20043EB34 /* YZCaptureViewController.xib */; };
+		16C288871D9A20B20043EB34 /* YZLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C288741D9A20B20043EB34 /* YZLiveViewController.m */; };
+		16C288881D9A20B20043EB34 /* YZLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C288751D9A20B20043EB34 /* YZLiveViewController.xib */; };
+		16C288891D9A20B20043EB34 /* YZCreatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C288781D9A20B20043EB34 /* YZCreatorItem.m */; };
+		16C2888A1D9A20B20043EB34 /* YZLiveItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C2887A1D9A20B20043EB34 /* YZLiveItem.m */; };
+		16C2888B1D9A20B20043EB34 /* YZLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C2887D1D9A20B20043EB34 /* YZLiveCell.m */; };
+		16C2888C1D9A20B20043EB34 /* YZLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C2887E1D9A20B20043EB34 /* YZLiveCell.xib */; };
+		16C2888D1D9A20B20043EB34 /* YZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C288821D9A20B20043EB34 /* YZMainViewController.m */; };
+		16C2888E1D9A20B20043EB34 /* YZMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C288831D9A20B20043EB34 /* YZMainViewController.xib */; };
 		66F77FFD3E56AD640940BEE4 /* libPods-NNLiveAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8F1B3CCD34B6CAC519EBC5 /* libPods-NNLiveAppTests.a */; };
 		D1CBD20914218CB6AC7BB4FA /* libPods-NNLiveAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07731FBFA0E5981701E149AB /* libPods-NNLiveAppUITests.a */; };
 		D85FBF74908D11F914AD122C /* libPods-NNLiveApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F48B1FAE405359E9FB4CE4D /* libPods-NNLiveApp.a */; };
@@ -67,8 +79,6 @@
 		16BF0DEC1D99229600F586C0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		16BF0DFA1D99262B00F586C0 /* NNLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLiveModel.h; sourceTree = "<group>"; };
 		16BF0DFB1D99262B00F586C0 /* NNLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLiveModel.m; sourceTree = "<group>"; };
-		16BF0DFD1D99282A00F586C0 /* YZLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZLiveCell.h; sourceTree = "<group>"; };
-		16BF0DFE1D99282A00F586C0 /* YZLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZLiveCell.m; sourceTree = "<group>"; };
 		16BF0E021D99292200F586C0 /* NNLiveTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLiveTableViewController.h; sourceTree = "<group>"; };
 		16BF0E031D99292200F586C0 /* NNLiveTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLiveTableViewController.m; sourceTree = "<group>"; };
 		16C175D61D991E7100B74A8E /* NNLiveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNLiveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +95,28 @@
 		16C175FA1D991E7600B74A8E /* NNLiveAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNLiveAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C175FE1D991E7600B74A8E /* NNLiveAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNLiveAppUITests.m; sourceTree = "<group>"; };
 		16C176001D991E7600B74A8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C2885F1D9A0E6C0043EB34 /* NNLiveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLiveTableViewCell.h; sourceTree = "<group>"; };
+		16C288601D9A0E6C0043EB34 /* NNLiveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLiveTableViewCell.m; sourceTree = "<group>"; };
+		16C288641D9A1DCA0043EB34 /* NNLivePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLivePlayViewController.h; sourceTree = "<group>"; };
+		16C288651D9A1DCA0043EB34 /* NNLivePlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLivePlayViewController.m; sourceTree = "<group>"; };
+		16C2886A1D9A20B20043EB34 /* YZBroadcastListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZBroadcastListController.h; sourceTree = "<group>"; };
+		16C2886B1D9A20B20043EB34 /* YZBroadcastListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZBroadcastListController.m; sourceTree = "<group>"; };
+		16C2886E1D9A20B20043EB34 /* YZCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZCaptureViewController.h; sourceTree = "<group>"; };
+		16C2886F1D9A20B20043EB34 /* YZCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZCaptureViewController.m; sourceTree = "<group>"; };
+		16C288701D9A20B20043EB34 /* YZCaptureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YZCaptureViewController.xib; sourceTree = "<group>"; };
+		16C288731D9A20B20043EB34 /* YZLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZLiveViewController.h; sourceTree = "<group>"; };
+		16C288741D9A20B20043EB34 /* YZLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZLiveViewController.m; sourceTree = "<group>"; };
+		16C288751D9A20B20043EB34 /* YZLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YZLiveViewController.xib; sourceTree = "<group>"; };
+		16C288771D9A20B20043EB34 /* YZCreatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZCreatorItem.h; sourceTree = "<group>"; };
+		16C288781D9A20B20043EB34 /* YZCreatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZCreatorItem.m; sourceTree = "<group>"; };
+		16C288791D9A20B20043EB34 /* YZLiveItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZLiveItem.h; sourceTree = "<group>"; };
+		16C2887A1D9A20B20043EB34 /* YZLiveItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZLiveItem.m; sourceTree = "<group>"; };
+		16C2887C1D9A20B20043EB34 /* YZLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZLiveCell.h; sourceTree = "<group>"; };
+		16C2887D1D9A20B20043EB34 /* YZLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZLiveCell.m; sourceTree = "<group>"; };
+		16C2887E1D9A20B20043EB34 /* YZLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YZLiveCell.xib; sourceTree = "<group>"; };
+		16C288811D9A20B20043EB34 /* YZMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZMainViewController.h; sourceTree = "<group>"; };
+		16C288821D9A20B20043EB34 /* YZMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZMainViewController.m; sourceTree = "<group>"; };
+		16C288831D9A20B20043EB34 /* YZMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YZMainViewController.xib; sourceTree = "<group>"; };
 		3C8F1B3CCD34B6CAC519EBC5 /* libPods-NNLiveAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNLiveAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F48B1FAE405359E9FB4CE4D /* libPods-NNLiveApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNLiveApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B3596D5A281E626020D9F5C /* Pods-NNLiveAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNLiveAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NNLiveAppUITests/Pods-NNLiveAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,14 +224,17 @@
 		16C175D81D991E7200B74A8E /* NNLiveApp */ = {
 			isa = PBXGroup;
 			children = (
+				16C288671D9A20B20043EB34 /* Classes */,
 				16C175DC1D991E7200B74A8E /* AppDelegate.h */,
 				16C175DD1D991E7300B74A8E /* AppDelegate.m */,
 				16BF0E021D99292200F586C0 /* NNLiveTableViewController.h */,
 				16BF0E031D99292200F586C0 /* NNLiveTableViewController.m */,
+				16C288641D9A1DCA0043EB34 /* NNLivePlayViewController.h */,
+				16C288651D9A1DCA0043EB34 /* NNLivePlayViewController.m */,
 				16BF0DFA1D99262B00F586C0 /* NNLiveModel.h */,
 				16BF0DFB1D99262B00F586C0 /* NNLiveModel.m */,
-				16BF0DFD1D99282A00F586C0 /* YZLiveCell.h */,
-				16BF0DFE1D99282A00F586C0 /* YZLiveCell.m */,
+				16C2885F1D9A0E6C0043EB34 /* NNLiveTableViewCell.h */,
+				16C288601D9A0E6C0043EB34 /* NNLiveTableViewCell.m */,
 				16C175E21D991E7300B74A8E /* Main.storyboard */,
 				16C175E51D991E7400B74A8E /* Assets.xcassets */,
 				16C175E71D991E7400B74A8E /* LaunchScreen.storyboard */,
@@ -234,6 +269,111 @@
 				16C176001D991E7600B74A8E /* Info.plist */,
 			);
 			path = NNLiveAppUITests;
+			sourceTree = "<group>";
+		};
+		16C288671D9A20B20043EB34 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				16C288681D9A20B20043EB34 /* BroadcastList */,
+				16C2886C1D9A20B20043EB34 /* Caputure */,
+				16C288711D9A20B20043EB34 /* Live */,
+				16C2887F1D9A20B20043EB34 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		16C288681D9A20B20043EB34 /* BroadcastList */ = {
+			isa = PBXGroup;
+			children = (
+				16C288691D9A20B20043EB34 /* Controller */,
+			);
+			path = BroadcastList;
+			sourceTree = "<group>";
+		};
+		16C288691D9A20B20043EB34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				16C2886A1D9A20B20043EB34 /* YZBroadcastListController.h */,
+				16C2886B1D9A20B20043EB34 /* YZBroadcastListController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		16C2886C1D9A20B20043EB34 /* Caputure */ = {
+			isa = PBXGroup;
+			children = (
+				16C2886D1D9A20B20043EB34 /* Controller */,
+			);
+			path = Caputure;
+			sourceTree = "<group>";
+		};
+		16C2886D1D9A20B20043EB34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				16C2886E1D9A20B20043EB34 /* YZCaptureViewController.h */,
+				16C2886F1D9A20B20043EB34 /* YZCaptureViewController.m */,
+				16C288701D9A20B20043EB34 /* YZCaptureViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		16C288711D9A20B20043EB34 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				16C288721D9A20B20043EB34 /* Controller */,
+				16C288761D9A20B20043EB34 /* Model */,
+				16C2887B1D9A20B20043EB34 /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		16C288721D9A20B20043EB34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				16C288731D9A20B20043EB34 /* YZLiveViewController.h */,
+				16C288741D9A20B20043EB34 /* YZLiveViewController.m */,
+				16C288751D9A20B20043EB34 /* YZLiveViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		16C288761D9A20B20043EB34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16C288771D9A20B20043EB34 /* YZCreatorItem.h */,
+				16C288781D9A20B20043EB34 /* YZCreatorItem.m */,
+				16C288791D9A20B20043EB34 /* YZLiveItem.h */,
+				16C2887A1D9A20B20043EB34 /* YZLiveItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		16C2887B1D9A20B20043EB34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16C2887C1D9A20B20043EB34 /* YZLiveCell.h */,
+				16C2887D1D9A20B20043EB34 /* YZLiveCell.m */,
+				16C2887E1D9A20B20043EB34 /* YZLiveCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16C2887F1D9A20B20043EB34 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				16C288801D9A20B20043EB34 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		16C288801D9A20B20043EB34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				16C288811D9A20B20043EB34 /* YZMainViewController.h */,
+				16C288821D9A20B20043EB34 /* YZMainViewController.m */,
+				16C288831D9A20B20043EB34 /* YZMainViewController.xib */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,8 +491,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C288881D9A20B20043EB34 /* YZLiveViewController.xib in Resources */,
 				16C175E91D991E7400B74A8E /* LaunchScreen.storyboard in Resources */,
+				16C2888C1D9A20B20043EB34 /* YZLiveCell.xib in Resources */,
 				16C175E61D991E7400B74A8E /* Assets.xcassets in Resources */,
+				16C2888E1D9A20B20043EB34 /* YZMainViewController.xib in Resources */,
+				16C288861D9A20B20043EB34 /* YZCaptureViewController.xib in Resources */,
 				16C175E41D991E7300B74A8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,10 +646,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				16BF0DFC1D99262B00F586C0 /* NNLiveModel.m in Sources */,
+				16C288841D9A20B20043EB34 /* YZBroadcastListController.m in Sources */,
+				16C288871D9A20B20043EB34 /* YZLiveViewController.m in Sources */,
+				16C288851D9A20B20043EB34 /* YZCaptureViewController.m in Sources */,
 				16C175DE1D991E7300B74A8E /* AppDelegate.m in Sources */,
+				16C288661D9A1DCA0043EB34 /* NNLivePlayViewController.m in Sources */,
+				16C288621D9A0E6C0043EB34 /* NNLiveTableViewCell.m in Sources */,
 				16BF0E041D99292200F586C0 /* NNLiveTableViewController.m in Sources */,
+				16C288891D9A20B20043EB34 /* YZCreatorItem.m in Sources */,
 				16C175DB1D991E7200B74A8E /* main.m in Sources */,
-				16BF0E001D99282A00F586C0 /* YZLiveCell.m in Sources */,
+				16C2888D1D9A20B20043EB34 /* YZMainViewController.m in Sources */,
+				16C2888B1D9A20B20043EB34 /* YZLiveCell.m in Sources */,
+				16C2888A1D9A20B20043EB34 /* YZLiveItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
